@@ -8,7 +8,7 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8">
         <script src="angular.min.js"></script>
-        <script src="JS/controlador.js">
+        <script src="JS/Controlador.js">
         <title></title>
     </head>
     <body ng-app="gisApp" ng-controller="controlador">
