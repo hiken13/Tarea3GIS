@@ -8,12 +8,13 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8">
         <script src="angular.min.js"></script>
-        <script src="JS/Controlador.js">
+        <script src="JS/Controlador.js"></script>
         <title></title>
     </head>
     <body ng-app="gisApp" ng-controller="controlador">
-        <?php
-        // put your code here
-        ?>
+        <canvas id="myCanvas" height="{{size}}" width="{{size}}" style="border: 1px solid black">
+            
+        </canvas>
+        
     </body>
 </html>
