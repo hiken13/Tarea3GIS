@@ -12,7 +12,7 @@ and open the template in the editor.
         <title></title>
     </head>
     <body ng-app="gisApp" ng-controller="controlador">        
-        <canvas id="myCanvas" height="{{size}}" width="{{size}}" style="border: 1px solid black">
+        <canvas id="myCanvas" height="{{canvasX}}" width="{{canvasX}}" style="border: 1px solid black">
             
         </canvas>
         
