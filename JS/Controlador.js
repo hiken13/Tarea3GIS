@@ -1,4 +1,4 @@
-angular.module('gisApp',[]).controller('controlador',function($scope,$http){
+angular.module('gisApp', []).controller('controlador', function ($scope, $http) {
     $scope.size = 640;
     $scope.hospitales = new Object();
     $scope.canvasX = $scope.size;
@@ -31,19 +31,20 @@ angular.module('gisApp',[]).controller('controlador',function($scope,$http){
         {
             var x = value.coordenada.coordinates[0][0];
             var y = value.coordenada.coordinates[0][1];
-            x = 10 + Math.round((x - $scope.hospitales.data.Dimensiones.xmin) / $scope.factorProporcional);
-            y = 10 + Math.round((y - $scope.hospitales.data.Dimensiones.ymin) / $scope.factorProporcional);
+            context.font = '8px Calibri';
+            //context.fillStyle = 'ligthgray';
+            
+            x = 5 + Math.round((x - $scope.hospitales.data.Dimensiones.xmin) / $scope.factorProporcional);
+            y = 5 + Math.round((y - $scope.hospitales.data.Dimensiones.ymin) / $scope.factorProporcional);
             y = $scope.canvasY - y;
-            //context.beginPath();
-            //context.arc(x, y, 3, 0, 2 * Math.PI);
-            //context.fill();
-            //context.lineWidth = 3;
+            var newx = context.measureText(value.nombre).width/2;
+            context.fillText(value.nombre, x-newx, y-10);
+
             context.moveTo(x - 5, y);
             context.lineTo(x + 5, y);
             context.moveTo(x, y - 5);
             context.lineTo(x, y + 5);
-            //context.moveTo(x, 0);
-            //context.lineTo(x, 95);
+            
             context.strokeStyle = "rgb(255,0,0)";
             context.stroke();
         });
