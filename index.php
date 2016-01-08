@@ -11,7 +11,7 @@ and open the template in the editor.
         <script src="JS/Controlador.js"></script>
         <title></title>
     </head>
-    <body ng-app="gisApp" ng-controller="controlador">
+    <body ng-app="gisApp" ng-controller="controlador">        
         <canvas id="myCanvas" height="{{size}}" width="{{size}}" style="border: 1px solid black">
             
         </canvas>
