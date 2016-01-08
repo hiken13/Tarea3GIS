@@ -9,7 +9,7 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <script src="angular.min.js"></script>
         <script src="JS/Controlador.js"></script>
-        <title></title>
+        <title>Tarea GIS</title>
     </head>
     <body ng-app="gisApp" ng-controller="controlador">        
         <canvas id="myCanvas" height="{{canvasX}}" width="{{canvasX}}" style="border: 1px solid black">
